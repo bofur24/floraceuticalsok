@@ -1,24 +1,11 @@
-html {
-  font-size: 16px;
-  color: #1c8b85;
-  background: #003166;
-  font-family: 'Raleway', Arial, Sans-serif;
-}
+
 body {
   margin: 0;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  color: #2e354f;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:visited {
-  color: #1c8b85;
-}
-
-a:active {
-  color: #c0c0c0;
-}
 nav {
   display: flex;
   height: 64px;
@@ -26,6 +13,104 @@ nav {
 
 header {
   background: #fff;
+}
+
+/* Typography */
+
+h1,
+h2,
+strong {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+  color: #ef5839;
+}
+
+a {
+  color: #ef5839;
+}
+
+a:hover,
+a:focus {
+  color: #d4b44c;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  /* 1.5em = 150% of the parent */
+  font-size: 1em; 
+}
+
+/* Layout */
+
+header {
+  background: #2e354f;
+  padding: 45px 0;
+  color: #fff;
+}
+
+section {
+  padding: 45px 0;
+}
+
+.section-two {
+  background: #2e354f;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.container input {
+  width: 100%;
+  clear: both;
+  border: 1px solid #000;
+}
+
+input:hover {
+  border: 2px solid #111;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  text-decoration: none;
+
+}
+
+.btn-accent {
+  background: #ef5839;
+  color: #fff;
+}
+
+.btn-accent:hover {
+  color: #2e354f;
+  background: #d4b44c;
+}
+
+.btn-white {
+  background: #fff;
+  color: #2e354f;
+}
+
+.btn-white:hover {
+  color: #2e354f;
+  background: #999;
 }
 
 .desktop {
@@ -42,19 +127,21 @@ header {
 .navigation {
   align-items: center;
 }
+
+img {
+  width: 50%;
+}
+
 nav li {
   list-style: none;
   display: flex;
-}
-
-nav li a {
-  color: #1c8b85;
 }
 
 img  {
   width: 100%;
   height: auto;
 }
+
 
 @media only screen and (min-width: 580px) {
   .mobile {
@@ -133,3 +220,5 @@ footer {
     font-size: 35px;
   }  
 } 
+
+
