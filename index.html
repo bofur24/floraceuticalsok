@@ -4,68 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Floraceuticalsok</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:700|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/test.css">
     <script src="https://kit.fontawesome.com/29ebd4b032.js" crossorigin="anonymous"></script>
+    <title>Floraceuticals</title>
 </head>
-  <body>
+<body>
     <header>
-      <nav class="container">
-        <ul class="desktop navigation">
-          <li class="logo"><a href="index.html"><img src="Images/ic-logo.svg" alt=""><span>Floraceuticals</span></a></li>
-          <li><a href="#grow">The Grow</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <ul class="mobile navigation">
-          <li><a href="index.html"><img src="Images/ic-logo.svg" alt=""></a></li>
-          <li><a href="#grow">The Grow</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <h1 class="mobile">Floraceuticals</h1>
-    </header>    
-    <section id="grow" class="section-one">
-        <div class="container">
-            <h2>The Grow</h2>
-            <img src="Images/Grow.jpg" alt="The Grow">
-            <p>
-                The grow is what we call our location. This image is of the <strong>VEG</strong> room <a href="#">Click here to see more</a>
-            </p> 
+        <div class="container flex-container">
+            <div >
+                <img class="logo" src="Images/Pot_Leaf.png" alt="logo">
+                <h1 class="header-title">Floraceuticals</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="current-page">Home</a></li>
+                    <li><a href="#">The Grow</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
-    <section id="about" class="section-two">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>
-               Floraceuticals has been in production for 5 months.
-            </p>
-            <p>
-               New
-            </p>
-        </div>
-    </section>
-    <section id="contact" class="section-one">
-        <div class="container">
-            <h2>Contact Us</h2>
-          <form action="">
-            <label for="">Name:</label>
-            <input type="text"> <br>
-            <label for="">Phone Number:</label>
-            <input type="phone"> <br>
-            <label for="">Email:</label>
-            <input type="email">
-          </form>
-        </div>
-    </section>
-      <footer class="section-two">
-        <p class="copyright">&copy; 2019 Floraceuticals. All rights reserved</p>
-        <nav class="footer-nav">
-          <ul>
-            <li><a href="https://www.facebook.com/Floraceuticals-338043233566355/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-          </ul>
-        </nav>
-      </footer>
-
+    </header>
+    <main class="container ">
+        <section class="section-one">
+            <div class="flex-section-main">
+                <h2 class="section-title">The Grow</h2>
+                <img src="Images/Grow.jpg" alt="">
+            </div>
+            <div class="flex-section-secondary">
+                <p>
+                    The grow is what we call our facility. The facility consists of a <strong>VEG</strong> room, <strong>FLOWER</strong> room, and <Strong>DRY</Strong> room.
+                    <a href="#">click here to see each room</a>     
+                </p>
+            </div>
+        </section>
+        <section id="about" class="section-two">
+            <div>
+                <h2 class="section-title">About Us</h2>
+                <p>
+                   Floraceuticals LLC is a commercial grow that focuses on producting high quality cannabis for the patients
+                   of Oklahoma. We hold ourselves to a differnt standard when it comes to the way we cultivate.
+                </p>
+                <p>
+                   New
+                </p>
+            </div>
+        </section>
+        <section id="contact" class="section-one">
+            <div>
+                <h2 class="section-title">Contact Us</h2>
+              <form action="">
+                <label for="">Name:</label>
+                <input type="text"> <br>
+                <label for="">Phone Number:</label>
+                <input type="phone"> <br>
+                <label for="">Email:</label>
+                <input type="email">
+              </form>
+            </div>
+        </section>       
+    </main>
+    <footer>
+      <p>&copy; 2019 Floraceuticals LLC. All rights reserved</p>
+       <a href="https://www.facebook.com/Floraceuticals-338043233566355/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+    </footer>
+    
+</body>
+</html>
