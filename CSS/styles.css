@@ -100,9 +100,14 @@ footer {
     color: #236902;
 }
 
+.center {
+    text-align: center;
+}
+
 /* Navigation */
 
-nav ul {
+nav ul,
+.types {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -137,6 +142,18 @@ nav a:focus {
 .current-page:hover {
     color: #b4b4b4;
 }
+
+.types a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.types a:hover {
+    text-decoration: underline;
+    color: #2c5719;
+}
+
 
 /* Contact Form */
 
@@ -175,11 +192,13 @@ input[type=submit]:hover {
 /* Media Queries */
 
  @media (min-width: 675px) {
-    nav ul {
+    nav ul,
+    .types {
        flex-direction: row;
        justify-content: space-between;
     }
-    nav li {
+    nav li,
+    .types {
        margin: .5em 0;
        margin-left: 1em;
     }
@@ -204,6 +223,6 @@ input[type=submit]:hover {
        width: 45%;
        margin: 3em;
    }
-   
 
- } 
+ }
+  
