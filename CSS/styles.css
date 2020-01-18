@@ -116,6 +116,7 @@ nav li {
 }
 
 nav a {
+    display: block;
     text-decoration: none;
     color: #b4b4b4;
     font-weight: 700;
@@ -130,7 +131,7 @@ nav a:focus {
 }
 
 .current-page {
-    border-bottom: 1px solid #b4b4b4;
+    color: #5bd82a;
 }
 
 .current-page:hover {
@@ -176,6 +177,7 @@ input[type=submit]:hover {
  @media (min-width: 675px) {
     nav ul {
        flex-direction: row;
+       justify-content: space-between;
     }
     nav li {
        margin: .5em 0;
