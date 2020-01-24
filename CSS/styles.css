@@ -116,7 +116,7 @@ footer {
 .card-header {
     padding:0.01em 16px;
     margin-bottom: .1em;
-    background-color: #e2e1e1;
+    background-color: #b4b4b4;
     border-radius: 10px 10px 1px 1px;
 }
 
@@ -296,10 +296,19 @@ input[type=submit]:hover {
     border-radius: 10px;
    }
 
-   .section-one {
+   .section-flex {
        display: flex;
        justify-content: space-between;
    }
+
+   .feat-img {
+       width: 50%;
+       float: left;
+       margin-right: 1em;       
+       margin-top: .5em;
+       margin-bottom: .5em;
+}
+
    .flex-section-main {
        width: 45%;
    }
