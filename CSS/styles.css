@@ -84,7 +84,7 @@ footer {
 .section-one,
 .section-two {
     padding: 2em;
-    border-radius: 10px;
+    
 
 }
 
@@ -290,6 +290,12 @@ input[type=submit]:hover {
        border: none;
        margin-bottom: 1em;
    }
+
+   .section-one,
+   .section-two {
+    border-radius: 10px;
+   }
+
    .section-one {
        display: flex;
        justify-content: space-between;
