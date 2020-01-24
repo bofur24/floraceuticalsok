@@ -84,6 +84,7 @@ footer {
 .section-one,
 .section-two {
     padding: 2em;
+    border-radius: 10px;
 
 }
 
@@ -116,12 +117,14 @@ footer {
     padding:0.01em 16px;
     margin-bottom: .1em;
     background-color: #e2e1e1;
+    border-radius: 10px 10px 1px 1px;
 }
 
 .card-body {
     padding:0.01em 16px;
     box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
     background-color: #e2e1e18e;
+    border-radius: 1px 1px 10px 10px;
 }
 
 .w3-left {
@@ -207,6 +210,62 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+/* Modal */
+
+.modalBox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalBox:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalBox > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+    background: #606061;
+    color: #fff;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+    background: #00d9ff;
+}
 
 
 /* Media Queries */
@@ -231,8 +290,7 @@ input[type=submit]:hover {
        border: none;
        margin-bottom: 1em;
    }
-   .section-one,
-   .card-flex {
+   .section-one {
        display: flex;
        justify-content: space-between;
    }
@@ -244,16 +302,20 @@ input[type=submit]:hover {
        margin: 3em;
    }
 
-   .card-flex {
-       flex-wrap: wrap;
-   }
-
-   .card-flex-main,
-   .card-flex-secondary {
-       width: 45%;
-       margin-right: 1em;
-   };
-
-
  }
+
+ @media (min-width: 1060px) {
+    .card-flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .card-flex-main,
+    .card-flex-secondary {
+        width: 45%;
+        margin-right: 1em;
+    }
+ }
+ 
   
