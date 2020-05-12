@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Poppins:700|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/carousel.css">
     <script src="https://kit.fontawesome.com/29ebd4b032.js" crossorigin="anonymous"></script>
     <title>Floraceuticals | Products</title>
 </head>
@@ -41,7 +42,33 @@
                               <div>
                                   <a href="#close" title="Close" class="close">X</a>
                                   <h2>Crescendo</h2>
-                                  <img src="images/Test.jpg" alt="Crescendo">
+                                  <!-- Slideshow container -->
+                                    <div class="slideshow-container">    
+                                    <!-- Full-width images with number and caption text -->
+                                    <br>
+                                        <div class="mySlides fade">
+                                          <div class="numbertext">1 / 3</div>
+                                          <img src="Images/Test.jpg" class="slider-img">
+                                          <div class="text">Bud</div>
+                                        </div>                                    
+                                        <div class="mySlides fade">
+                                          <div class="numbertext">2 / 3</div>
+                                          <img src="Images/Pot_Leaf.png" class="slider-img">
+                                          <div class="text">Leaf</div>
+                                        </div>                                    
+                                        <div class="mySlides fade">
+                                          <div class="numbertext">3 / 3</div>
+                                          <img src="Images/fh3.JPG" class="slider-img">
+                                          <div class="text">Plant</div>
+                                        </div>                                    
+                                    </div>
+                                    <br>                                  
+                                    <!-- The dots/circles -->
+                                    <div style="text-align:center">
+                                      <span class="dot" onclick="currentSlide(1)"></span>
+                                      <span class="dot" onclick="currentSlide(2)"></span>
+                                      <span class="dot" onclick="currentSlide(3)"></span>
+                                    </div>
                               </div>
                           </div>
                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti consectetur dolorem officia. Doloremque explicabo, dolores consequatur iusto modi quae velit quod voluptates illum magnam eaque odio reiciendis similique odit qui.</p><br>
@@ -54,9 +81,42 @@
                           <h3>Girl Scout Cookie</h3>
                         </div>
                         <div class="card-body">
-                          <img src="images/Test.jpg" alt="Avatar" class="card-image">
-                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos neque, ipsa adipisci voluptate quas necessitatibus error eaque mollitia atque magnam! Sunt similique dicta suscipit officiis. Adipisci nulla aliquid perferendis expedita?</p><br>
-                        </div>
+                            <a href="#openModal"><img src="images/Test.jpg" alt="Crescendo" class="card-image"></a>
+                            <div id="openModal" class="modalBox">
+                                <div>
+                                    <a href="#close" title="Close" class="close">X</a>
+                                    <h2>Crescendo</h2>
+                                    <!-- Slideshow container -->
+                                      <div class="slideshow-container">                                    
+                                      <!-- Full-width images with number and caption text -->
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">1 / 3</div>
+                                        <img src="Images/Test.jpg">
+                                        <div class="text">Caption Text</div>
+                                      </div>                                    
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">2 / 3</div>
+                                        <img src="Images/Pot_Leaf.png">
+                                        <div class="text">Caption Two</div>
+                                      </div>                                    
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">3 / 3</div>
+                                        <img src="Images/fh3.JPG">
+                                        <div class="text">Caption Three</div>
+                                      </div>                                    
+                                      </div>
+                                      <br>
+                                    
+                                      <!-- The dots/circles -->
+                                      <div style="text-align:center">
+                                        <span class="dot" onclick="currentSlide(1)"></span>
+                                        <span class="dot" onclick="currentSlide(2)"></span>
+                                        <span class="dot" onclick="currentSlide(3)"></span>
+                                      </div>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti consectetur dolorem officia. Doloremque explicabo, dolores consequatur iusto modi quae velit quod voluptates illum magnam eaque odio reiciendis similique odit qui.</p><br>
+                          </div>
                     </div>
                 </div> 
                 <div class="card-flex-main">
@@ -65,9 +125,42 @@
                           <h3>Girl Scout Cookie</h3>
                         </div>
                         <div class="card-body">
-                          <img src="images/Test.jpg" alt="Avatar" class="card-image">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt nihil aspernatur eaque, consequatur, error dolore, non cupiditate dignissimos dolor illum optio nesciunt ut quas adipisci officiis vero ipsa molestiae?.</p><br>
-                        </div>
+                            <a href="#openModal"><img src="images/Test.jpg" alt="Crescendo" class="card-image"></a>
+                            <div id="openModal" class="modalBox">
+                                <div>
+                                    <a href="#close" title="Close" class="close">X</a>
+                                    <h2>Crescendo</h2>
+                                    <!-- Slideshow container -->
+                                      <div class="slideshow-container">                                    
+                                      <!-- Full-width images with number and caption text -->
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">1 / 3</div>
+                                        <img src="Images/Test.jpg">
+                                        <div class="text">Caption Text</div>
+                                      </div>                                    
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">2 / 3</div>
+                                        <img src="Images/Pot_Leaf.png">
+                                        <div class="text">Caption Two</div>
+                                      </div>                                    
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">3 / 3</div>
+                                        <img src="Images/fh3.JPG">
+                                        <div class="text">Caption Three</div>
+                                      </div>                                    
+                                      </div>
+                                      <br>
+                                    
+                                      <!-- The dots/circles -->
+                                      <div style="text-align:center">
+                                        <span class="dot" onclick="currentSlide(1)"></span>
+                                        <span class="dot" onclick="currentSlide(2)"></span>
+                                        <span class="dot" onclick="currentSlide(3)"></span>
+                                      </div>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti consectetur dolorem officia. Doloremque explicabo, dolores consequatur iusto modi quae velit quod voluptates illum magnam eaque odio reiciendis similique odit qui.</p><br>
+                          </div>
                     </div>
                 </div> 
                 <div class="card-flex-secondary">
@@ -76,14 +169,49 @@
                           <h3>Girl Scout Cookie</h3>
                         </div>
                         <div class="card-body">
-                          <img src="images/Test.jpg" alt="Avatar" class="card-image">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempore vitae quis rem totam ducimus suscipit porro quidem fugiat ea veniam, maiores cum. Facere tempora id sed distinctio, quo autem.</p><br>
-                        </div>
+                            <a href="#openModal"><img src="images/Test.jpg" alt="Crescendo" class="card-image"></a>
+                            <div id="openModal" class="modalBox">
+                                <div>
+                                    <a href="#close" title="Close" class="close">X</a>
+                                    <h2>Crescendo</h2>
+                                    <!-- Slideshow container -->
+                                      <div class="slideshow-container">                                    
+                                      <!-- Full-width images with number and caption text -->
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">1 / 3</div>
+                                        <img src="Images/Test.jpg">
+                                        <div class="text">Caption Text</div>
+                                      </div>                                    
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">2 / 3</div>
+                                        <img src="Images/Pot_Leaf.png">
+                                        <div class="text">Caption Two</div>
+                                      </div>                                    
+                                      <div class="mySlides fade">
+                                        <div class="numbertext">3 / 3</div>
+                                        <img src="Images/fh3.JPG">
+                                        <div class="text">Caption Three</div>
+                                      </div>                                    
+                                        <!-- Next and previous buttons -->
+                                      </div>
+                                      <br>
+                                    
+                                      <!-- The dots/circles -->
+                                      <div style="text-align:center">
+                                        <span class="dot" onclick="currentSlide(1)"></span>
+                                        <span class="dot" onclick="currentSlide(2)"></span>
+                                        <span class="dot" onclick="currentSlide(3)"></span>
+                                      </div>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti consectetur dolorem officia. Doloremque explicabo, dolores consequatur iusto modi quae velit quod voluptates illum magnam eaque odio reiciendis similique odit qui.</p><br>
+                          </div>
                     </div>
                 </div>  
 
             </div>
         </section>
+        
         
     </main>
     <footer>
