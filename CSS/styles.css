@@ -1,6 +1,12 @@
 
 /* font-family: 'ZCOOL XiaoWei', serif;
    font-family: 'Poppins', sans-serif; */
+* {
+    box-sizing: border-box
+}
+
+
+
 
    body {
     font-size: 1.125rem;
@@ -107,17 +113,15 @@ footer {
 }
 
 .card-image {
-    float: left;
-    border-radius: 50%;
-    margin-top: 1em;
-    margin-right: 1em;
-    width: 5em;
+    margin: 1em  auto;
+    height: 20em;
 }
 .card-header {
     padding:0.01em 16px;
     margin-bottom: .1em;
     background-color: #b4b4b4;
     border-radius: 10px 10px 1px 1px;
+    position: relative;
 }
 
 .card-body {
@@ -125,7 +129,50 @@ footer {
     box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
     background-color: #e2e1e18e;
     border-radius: 1px 1px 10px 10px;
+    text-align: center;
 }
+
+/* Slide Show */
+.mySlides1, 
+.mySlides2 {
+    display: none
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+   .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a grey background color */
+   .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }
+
+
 
 .w3-left {
     float:left!important
@@ -138,6 +185,8 @@ footer {
 .w3-margin-right {
     margin-right:16px!important
 }
+
+
 
 /* Navigation */
 
